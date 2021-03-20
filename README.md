@@ -49,6 +49,7 @@ And then calculate the cross validation score for each model ( use shuffle for a
 In our example, i arbitrary tried with the most 2 famous regression models: Linear regression and XGBOOST, calculated the cross validation score, the root mean square error , the mean score and the variance score for both model (Please see banchmarking table in the notebook)
 After selecting the best model, which was gradient boosting regressor, I used gridsearchcv for the
 parameter fine tuning, with param grids:
+
 {'n_estimators':[100],
  'learning_rate': [0.1],# 0.05, 0.02, 0.01],
  'max_depth':[6],#4,6],
@@ -59,19 +60,21 @@ and then we will have the best estimator that was found by gridsearchCV.
 There is a lot of metrics to evaluate the models but we can also see the plot where we show the real against the predicted prices. We can easily see that both curves share the same pace. 
 
 # Linear Regression result:
+![lr_result](/lr.png)
+
 MAE: 0.1757249618849295
-\nMSE: 0.12621292095037118
-\nRMSE: 0.35526457880060486
+MSE: 0.12621292095037118
+RMSE: 0.35526457880060486
 
 
 # Xgboost result :
-\NMAE: 0.15196680668587836
-\nMSE: 0.1012960862550101
-\nRMSE: 0.31827046085838706
+MAE: 0.15196680668587836
+MSE: 0.1012960862550101
+RMSE: 0.31827046085838706
 
 # Decision Tree Regressor result :
-\nMAE: 0.20269131288825087
-\nMSE: 0.2037024937092359
-\nRMSE: 0.45133412646202137
+MAE: 0.20269131288825087
+MSE: 0.2037024937092359
+RMSE: 0.45133412646202137
 
 
