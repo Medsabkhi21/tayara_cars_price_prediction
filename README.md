@@ -59,7 +59,7 @@ MAE: 0.1757249618849295
 MSE: 0.12621292095037118
 RMSE: 0.35526457880060486
 
-![real vs predicted](lr.png)
+![Screenshot](lr.png)
 
 # Xgboost result :
 MAE: 0.15196680668587836
