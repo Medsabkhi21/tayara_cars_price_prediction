@@ -60,7 +60,7 @@ and then we will have the best estimator that was found by gridsearchCV.
 There is a lot of metrics to evaluate the models but we can also see the plot where we show the real against the predicted prices. We can easily see that both curves share the same pace. 
 
 # Linear Regression result:
-![lr_result](/lr.png)
+![car price prediction](/lr.png)
 
 MAE: 0.1757249618849295
 MSE: 0.12621292095037118
