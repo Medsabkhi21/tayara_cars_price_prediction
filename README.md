@@ -4,7 +4,7 @@ scraping cars dataset from tayara.tn , cleaning it, visualizing and then impleme
 
 We will scrape our data at first, do some EDA(Exploratory Data Analysis), then feature selection then modeling and finally evaluating our model using diffirent metrics and techniques.
 
-![car price prediction](tayara_logo.png)
+![car price prediction](/tayara_logo.png)
 
 ## Part 1 – Data Scraping
 i used selenium to browse using google chrome
