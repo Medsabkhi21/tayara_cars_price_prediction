@@ -28,11 +28,15 @@ After the data preprocessing step, we should visualize the data to better unders
 how the data is distributed and have more insights about what is happening under the hoods. (please
 find all analysis in the notebook)
 
-## Part 2 - Feature selection
+## Part 2 - Feature selection & removing outliers
 
 In the analysis made in the notebook we can see that the “nb of years” , “carburant type“,
 ”kilometers driven”, “horsepower” are strongly correlated with the price. So
 "boite" and "cylindre" are not the only relevant features to work with.
+
+we'll remove some outliers present in kilometers driven and selling price. We need to remove these outliers by using IQR method.
+ ### encoding
+  one hot encoder resulted in an explostion of number of columns , label encoder wil create a comparison between the labels and we don't need that, so i used frequency encoder on the brand , model and city columns.
 
 
 ## Modeling
@@ -56,21 +60,18 @@ There is a lot of metrics to evaluate the models but we can also see the plot wh
 
 # Linear Regression result:
 MAE: 0.1757249618849295
-MSE: 0.12621292095037118
-RMSE: 0.35526457880060486
+\nMSE: 0.12621292095037118
+\nRMSE: 0.35526457880060486
 
-![Screenshot](lr.png)
 
 # Xgboost result :
-MAE: 0.15196680668587836
-MSE: 0.1012960862550101
-RMSE: 0.31827046085838706
-![real vs predicted](xgb.png)
+\NMAE: 0.15196680668587836
+\nMSE: 0.1012960862550101
+\nRMSE: 0.31827046085838706
 
 # Decision Tree Regressor result :
-MAE: 0.20269131288825087
-MSE: 0.2037024937092359
-RMSE: 0.45133412646202137
-![real vs predicted](prediction.png)
+\nMAE: 0.20269131288825087
+\nMSE: 0.2037024937092359
+\nRMSE: 0.45133412646202137
 
 
