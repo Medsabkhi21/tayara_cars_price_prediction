@@ -6,13 +6,13 @@ We will scrape our data at first, do some EDA(Exploratory Data Analysis), then f
 
 ![car price prediction](/tayara_logo.png)
 
-## Part 1 – Data Scraping
+## Part 0 – Data Scraping
 i used selenium to browse using google chrome
 and beautifulSoup as a web scraper
 we'll scrape : location, kilometers,year,brand,model,price,carburant,horse power, design,cylinder size
 
 
-## Part 2 – Data Cleaning and EDA
+## Part 1 – Data Cleaning and EDA
 ### Data Cleaning
 We need to preprocess the data to transform it to a useful one and also to reduce its size, so that it
 becomes easier to analyze.
@@ -39,7 +39,7 @@ we'll remove some outliers present in kilometers driven and selling price. We ne
   one hot encoder resulted in an explostion of number of columns , label encoder wil create a comparison between the labels and we don't need that, so i used frequency encoder on the brand , model and city columns.
 
 
-## Modeling
+## Part3 - Model implementation
 Normally for model selection we should use cross validation to test the data on multiple models,
 for example :
 linear regression
